@@ -4,26 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Сучасна пекарня</title>
 </head>
 
 <body>
   <header>
     <nav>
-      <!-- logo and menu -->
-      <a href="#">
+      <a href="/">
         <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
       </a>
       <ul>
-        <li>Наші традиції</li>
-        <li>Шеф-кухарі</li>
-        <li>Формати</li>
+        <li><a href="#traditions-section">Наші традиції</a></li>
+        <li><a href="#chefs-section">Шеф-кухарі</a></li>
+        <li><a href="#formats-section">Формати</a></li>
+        <li><a href="#contact-section">Контакти</a></li>
       </ul>
     </nav>
-    <!-- Замовити дзвінок -->
-    <button type="button">Замовити дзвінок</button>
   </header>
   <main>
+    <section>
+      <h1>Сучасна перкарня</h1>
+      <button type="button">Замовити дзвінок</button>
+    </section>
     <section>
       <ul>
         <li>Великий попит на ринку</li>
@@ -31,13 +33,21 @@
         <li>Досвідчена управлінська команда</li>
       </ul>
     </section>
-    <section>
-      <h1>Сучасна перкарня</h1>
-    </section>
-    <section>
+    <section id="traditions-section">
       <h2>Новий формат традицій</h2>
+      <p>
+        <span>SHOP BAKERY</span> — це пекарня, яка взяла все найкраще, і зберегла смак традиційної випічки та
+        натуральність інгредієнтів.
+      </p>
+      <p>
+        Ми працюємо як найвідоміші мережі — <span>5 хвилин і замовлення готове</span>. А ще у наших пекарень стильний
+        дизайн та висока
+        якість обслуговування!
+      </p>
+      <img src="/images/baker-man.jpg" alt="Чоловік пекар дивиться на батони із посмішкою">
+
     </section>
-    <section>
+    <section id="chefs-section">
       <h2>Наші найкращі шеф-кухарі</h2>
       <article>
         <h3>Настя</h3>
@@ -53,17 +63,17 @@
         <p>Я зроблю для вас унікальну начинку на будь який смак!</p>
       </article>
     </section>
-    <section>
+    <section id="formats-section">
       <h2>Формати</h2>
       <article>
-        <h3>Walrus</h3>
+        <h3 lang="en">Walrus</h3>
         <p>Площа: до 120 м2</p>
         <p>Меню: розширене меню</p>
         <p>Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2 офіціанти-різнороби</p>
         <p>Посадкові місця: є</p>
       </article>
       <article>
-        <h3>Horseshoe</h3>
+        <h3 lang="en">Horseshoe</h3>
         <p>Площа: до 120 м2</p>
         <p>Меню: розширене меню</p>
         <p>
@@ -73,7 +83,7 @@
         <p>Посадкові місця: є</p>
       </article>
       <article>
-        <h3>Handlebar</h3>
+        <h3 lang="en">Handlebar</h3>
         <p>Площа: до 120 м2</p>
         <p>Меню: розширене меню</p>
         <p>
@@ -83,22 +93,39 @@
         <p>Посадкові місця: є</p>
       </article>
     </section>
-    <section>
+    <section id="contact-section">
       <h2>Приєднуйся до мережі пекарень</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1070.2055820016062!2d30.441486622396493!3d50.35924117359401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1703591970359!5m2!1suk!2sua"
+        width="603" height="595" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
     </section>
   </main>
   <footer>
-    <a href="#">
-      <!-- Logo -->
-    </a>
+    <nav>
+      <a href="/">
+        <img src="/images/logo.svg" alt="Логотип сучасної пекарні">
+      </a>
+      <ul>
+        <li><a href="#traditions-section">Наші традиції</a></li>
+        <li><a href="#chefs-section">Шеф-кухарі</a></li>
+        <li><a href="#formats-section">Формати</a></li>
+        <li><a href="#contact-section">Контакти</a></li>
+      </ul>
+    </nav>
     <ul>
       <li><a href="tel:+380950658337">+38 (095) 065 83 37</a></li>
       <li><a href="mailto:lozinskyy@gmail.com">lozinskyy@gmail.com</a></li>
-      <li><a href="https://maps.app.goo.gl/mF7qDK98x4oyHW5W7" target="_blank">Україна, пр.Глушкова 40</a></li>
-      <li><a href="#"> <!-- facebook --> </a></li>
-      <li><a href="#"> <!-- instagram --> </a></li>
+      <li><a href="https://maps.app.goo.gl/mF7qDK98x4oyHW5W7" target="_blank">Україна, Київ, пр.Глушкова 450</a></li>
+      <li><a href="#"> facebook </a></li>
+      <li><a href="#"> instagram </a></li>
     </ul>
+    <a href="#" target="_blank">Політика конфіденційності</a>
+    <p>&copy; 2023 Дані захищені</p>
+
   </footer>
 </body>
+
+<script></script>
 
 </html>
