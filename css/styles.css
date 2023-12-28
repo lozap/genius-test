@@ -4,7 +4,7 @@
   font-family: 'Poppins';
   font-weight: 300;
   src: url('../fonts/poppins-v20-latin-300.woff2') format('woff2'),
-  url('../fonts/poppins-v20-devangary_latin-300.woff') format('woff'); 
+  url('../fonts/poppins-v20-devangary_latin-300.ttf') format('truetype'); 
 }
 
 @font-face {
@@ -12,7 +12,7 @@
   font-family: 'Poppins';
   font-weight: 400;
   src: url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
-  url('../fonts/poppins-v20-devangary_latin-regular.woff') format('woff'); 
+  url('../fonts/poppins-v20-devangary_latin-regular.ttf') format('truetype'); 
 }
 
 @font-face {
@@ -20,7 +20,7 @@
   font-family: 'Poppins';
   font-weight: 600;
   src: url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
-  url('../fonts/poppins-v20-devangary_latin-600.woff') format('woff'); 
+  url('../fonts/poppins-v20-devangary_latin-600.ttf') format('truetype'); 
 }
 
 @font-face {
@@ -28,7 +28,7 @@
   font-family: 'Poppins';
   font-weight: 900;
   src: url('../fonts/poppins-v20-latin-900.woff2') format('woff2'),
-  url('../fonts/poppins-v20-devangary_latin-900.woff') format('woff'); 
+  url('../fonts/poppins-v20-devangary_latin-900.ttf') format('truetype'); 
 }
 
 :root{
