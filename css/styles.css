@@ -150,8 +150,12 @@ ul{
 /* Hero section */
 
 .hero-section{
-  padding: 232px 0px;  
+  padding: 272px 0px;
   background-image: url(../images/hero-section-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .hero-title{
