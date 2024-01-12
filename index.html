@@ -64,10 +64,10 @@
         </div>
       </div>
     </section>
-    <section class="section" id="chefs-section">
+    <section class="chefs-section section" id="chefs-section">
       <div class="container">
         <h2 class="chefs-title section-title centered">
-          Наші найкращі <span class="accent">шеф-кухарі</span>
+          Наші найкращі <br><span class="accent">шеф-кухарі</span>
         </h2>
         <ul class="chefs-list">
           <li class="chefs-item">
@@ -75,9 +75,11 @@
               <img class="chef-photo" src="./images/nastya-chef.jpg" alt="Шеф-кухар Настя" />
               <div>
                 <h3 class="chef-title">Настя</h3>
-                <p class="chef-text">Привіт, я Настя!</p>
-                <p class="chef-text">Вже 10 років, я втілюю <br>у життя цікаві та смачні ідеї.</p>
-                <p class="chef-text">Я випічу для вас <br>найсмачніщі вироби!</p>
+                <div class="chef-text">
+                  <p>Привіт, я Настя!</p>
+                  <p>Вже 10 років, я втілюю <br>у життя цікаві та смачні ідеї.</p>
+                  <p>Я випічу для вас <br>найсмачніщі вироби!</p>
+                </div>
               </div>
             </article>
           </li>
@@ -86,19 +88,19 @@
               <img class="chef-photo" src="./images/vlad-chef.jpg" alt="Шеф-кухар Влад">
               <div>
                 <h3 class="chef-title">Влад</h3>
-                <p class="chef-text">Привіт, я Влад!</p>
-                <p class="chef-text">Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось
-                  кожен раз з Вами
-                  через
-                  нашу випічку!</p>
-                <p class="chef-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
+                <div class="chef-text">
+                  <p>Привіт, я Влад!</p>
+                  <p>Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша любов, з якою ми ділимось
+                    кожен раз з Вами через нашу випічку!</p>
+                  <p class="chef-text">Я зроблю для вас унікальну начинку на будь який смак!</p>
+                </div>
               </div>
             </article>
           </li>
         </ul>
       </div>
     </section>
-    <section class="section" id="formats-section">
+    <section class="formats-section section" id="formats-section">
       <div class="container">
         <h2 class="section-title centered">Формати</h2>
         <div class="formats-container">
@@ -174,41 +176,50 @@
   </main>
   <footer class="footer-section">
     <div class="container">
-      <nav>
-        <a href="/">
-          <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
-        </a>
-        <ul>
-          <li><a class="link" href="#traditions-section">Наші традиції</a></li>
-          <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-          <li><a class="link" href="#formats-section">Формати</a></li>
-          <li><a class="link" href="#contact-section">Контакти</a></li>
-        </ul>
-      </nav>
-      <ul>
-        <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
-        <li><a class="address-link" href="mailto:backery@gmail.com">backery@gmail.com</a></li>
-        <li><a class="address-link" href="https://maps.app.goo.gl/mF7qDK98x4oyHW5W7" target="_blank">Україна, Київ,
-            бул.Тараса Шевченкка 5</a></li>
-      </ul>
-      <ul>
-        <li>
-          <a href="#">
-            <svg class="address-icon" width="32px" height="32px">
-              <use href="./images/icons.svg#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#">
-            <svg class="address-icon" width="32px" height="32px">
-              <use href="./images/icons.svg#icon-instagram"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <a href="#" class="address-link" target="_blank">Політика конфіденційності</a>
-      <p class="address-copyright">&copy; 2023 Дані захищені</p>
+      <div class="footer-container">
+        <nav class="footer-nav">
+          <div class="footer-logo">
+            <a href="/">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні">
+            </a>
+          </div>
+          <ul class="footer-menu">
+            <li><a class="link" href="#traditions-section">Наші традиції</a></li>
+            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+            <li><a class="link" href="#formats-section">Формати</a></li>
+            <li><a class="link" href="#contact-section">Контакти</a></li>
+          </ul>
+        </nav>
+        <address class="footer-address">
+          <ul class="address-list">
+            <li><a class="address-link" href="tel:+380960000007">+ 38 (096) 000 00 07</a></li>
+            <li><a class="address-link" href="mailto:backery@gmail.com">backery@gmail.com</a></li>
+            <li><a class="address-link" href="https://maps.app.goo.gl/mF7qDK98x4oyHW5W7" target="_blank">Україна, Київ,
+                бул.Тараса Шевченкка 5</a></li>
+            <div class="footer-social">
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32px" height="32px">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <svg class="address-icon" width="32px" height="32px">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+            </div>
+          </ul>
+          <div class="address-info">
+            <a class="address-link" href="#" target="_blank">Політика конфіденційності</a>
+            <p class="address-copyright">&copy; 2023 Дані захищені</p>
+
+          </div>
+        </address>
+      </div>
     </div>
   </footer>
 </body>
