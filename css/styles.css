@@ -176,6 +176,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  /* background: url(../images/hero-section-background.jpg) no-repeat center; */
   /* background-attachment: fixed; */
 }
 
@@ -494,7 +495,7 @@ ul {
 
 .backdrop.is-hidden {
   /* display: none; */
-  /* у випадку необхідності анымації  замість display:none пишемо наступний код*/
+  /* у випадку необхідності анымації замість display:none пишемо наступний код*/
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
