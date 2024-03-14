@@ -246,6 +246,10 @@ ul {
   max-width: 340px;
 }
 
+.traditions-img {
+  border-radius: 190px 190px 0 0;
+}
+
 /* Chef section */
 
 .chefs-title {
@@ -287,8 +291,8 @@ ul {
 
 .chefs-list {
   display: flex;
-  gap: 40px 30px;
   flex-wrap: wrap;
+  gap: 40px 30px;
 }
 
 .chefs-item {
