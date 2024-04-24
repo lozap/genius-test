@@ -150,7 +150,7 @@
               </article>
             </li>
           </ul>
-          <button class="carousel-button next"  type="button">
+          <button class="carousel-button next" type="button">
             <svg class="carousel-arrow" width="16px" height="16px">
               <use href="./images/icons.svg#icon-arrow"></use>
             </svg>
@@ -164,7 +164,18 @@
           <div class="contact-form">
             <h2 class="contact-title section-title">Приєднуйся до мережі пекарень</h2>
             <p>Заповни форму, щоб ми зв'язалися з тобою:</p>
-            <!-- form -->
+            <form name="contact-form" autocomplete="off" novalidate>
+              <label for="user-name">Ім'я</label>
+              <input type="text" name="user-name" id="user-name">
+              <label for="user-tel">Телефон</label>
+              <input type="tel" name="user-tel" id="user-tel">
+              <label for="user-email">e-mail</label>
+              <input type="email" name="user-email" id="user-email">
+              <button type="submit">Замовити дзвінок</button>
+            </form>
+            <p>Натискаючи на кнопку я погоджуюсь з
+              <a href="#">політикою конфіденційності</a>
+            </p>
           </div>
           <iframe class="contact-map"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9325734713498!2d30.51560037703854!3d50.44235657159063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2z0LHRg9C70YzQstCw0YAg0KLQsNGA0LDRgdCwINCo0LXQstGH0LXQvdC60LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1703936300212!5m2!1suk!2sua"
@@ -224,7 +235,27 @@
 
   <div class="backdrop is-hidden">
     <div class="modal">
-      <button class="modal-btn-close" type="button">Close</button>
+      <button class="modal-btn-close" type="button">Закрити</button>
+      <h2 class="contact-title section-title">Замовити дзвінок</h2>
+      <p>Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+      <form name="contact-form" autocomplete="off" novalidate>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-name">Ім'я</label>
+          <input class="form-input" type="text" name="user-name" id="user-name" placeholder="Ім'я">
+        </div>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-tel">Телефон</label>
+          <input class="form-input" type="tel" name="user-tel" id="user-tel" placeholder="Телефон">
+        </div>
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-email">e-mail</label>
+          <input class="form-input" type="email" name="user-email" id="user-email" placeholder="Елктронна пошта">
+        </div>
+        <button type="submit">Замовити дзвінок</button>
+      </form>
+      <p>Натискаючи на кнопку я погоджуюсь з
+        <a href="#">політикою конфіденційності</a>
+      </p>
     </div>
   </div>
 </body>
