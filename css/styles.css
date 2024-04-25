@@ -562,6 +562,16 @@ ul {
   width: 100%;
   border-radius: 5px;
   border: 3px solid var(--color-secondary-dark);
+  background-color: var(--color-primary-light);
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input-modal {
+  padding: 16px 42px;
+  width: 100%;
+  border-radius: 5px;
+  border: 3px solid var(--color-secondary-dark);
   background-color: var(--color-brend-light);
   font-size: 16px;
   line-height: 1.17;
