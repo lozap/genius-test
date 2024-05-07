@@ -1,0 +1,31 @@
+
+@import './utils/fonts';
+@import './utils/variables';
+
+@import './base';
+
+@import './utils/utils';
+
+@import './components/links';
+@import './components/buttons';
+@import './components/header';
+@import './components/hero';
+@import './components/adventages';
+@import './components/traditions';
+@import './components/chefs';
+@import './components/formats';
+@import './components/contacts';
+@import './components/footer';
+@import './components/modal';
+
+@import './utils/mixins';
+
+.circleSmall {
+    @include circle(100px, 100px, green);
+}
+
+.circleBig {
+    @include circle(200px,
+        200px,
+        red)
+}
