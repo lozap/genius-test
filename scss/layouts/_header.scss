@@ -1,0 +1,53 @@
+/* Header section */
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 16px;
+  }
+
+  &__nav {
+    flex-grow: 1;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__menu {
+    display: flex;
+    gap: 64px;
+    flex-grow: 1;
+    justify-content: center;
+
+    @media screen and (max-width: $bp-desctop) {
+      display: none;
+    }
+  }
+
+  &__button {
+    @media screen and (max-width: $bp-desctop) {
+      display: none;
+    }
+  }
+
+  &__burger {
+    display: none;
+
+    @media screen and (max-width: $bp-desctop) {
+      display: block;
+      background-color: transparent;
+      border: none;
+      width: 24px;
+      height: 24px;
+      fill: var(--color-primary-light);
+    }
+  }
+}
