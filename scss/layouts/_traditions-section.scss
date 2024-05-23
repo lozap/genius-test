@@ -1,7 +1,7 @@
 /* Traditions section */
 
 .traditions-section {
-  padding-top: 40px;
+  padding-top: 10px;
 
   @media screen and (min-width: $bp-tablet) {
     padding-top: 96px;
@@ -33,7 +33,11 @@
 }
 
 .tradition-text.limited {
-  max-width: 340px;
+  max-width: 100%;
+
+  @media screen and (min-width: $bp-tablet) {
+    max-width: 340px;
+  }
 }
 
 .traditions-img {
