@@ -1,26 +1,25 @@
-
 /* Button */
 
 .button {
-    margin: 0 0;
-    padding: 16px 32px;
-    color: var(--color-primary-light);
-    background-color: var(--color-brend-normal);
-    border: 2px solid var(--color-brend-normal);
-    border-radius: 8px;
-    font-weight: 600;
-    cursor: pointer;
+  display: block;
+  margin: 0 0;
+  padding: 16px 32px;
+  color: var(--color-primary-light);
+  background-color: var(--color-brend-normal);
+  border: 2px solid var(--color-brend-normal);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .button:hover {
-    color: var(--color-brend-normal);
-    background-color: var(--color-primary-light);
-    border-color: currentColor;
+  color: var(--color-brend-normal);
+  background-color: var(--color-primary-light);
+  border-color: currentColor;
 }
 
 .button[disabled] {
-    background-color: lightgray;
-    color: grey;
-    cursor: not-allowed;
+  background-color: lightgray;
+  color: grey;
+  cursor: not-allowed;
 }
-
