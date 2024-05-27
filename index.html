@@ -1,205 +1,330 @@
 <!DOCTYPE html>
 <html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Сучасна пекарня</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module">
+      import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Сучасна пекарня</title>
-  <!-- Styles -->
-  <link rel="stylesheet" href="./css/main.min.css" />
-</head>
+      const swiper = new Swiper('.swiper-container', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 20,
+        breakpoints: {
+          720: {
+            slidesPerView: 2,
+          },
+          1200: {
+            slidesPerView: 3,
+          },
+        },
+        pagination: {
+          el: '.pagination',
+          bulletClass: 'pagination__button',
+          bulletActiveClass: 'pagination__button--active',
+        },
+        navigation: {
+          nextEl: '.carousel-button.next',
+          prevEl: '.carousel-button.prev',
+        },
+      });
+    </script>
+  </head>
 
-<body>
-  <header class="header">
-    <div class="container">
-      <div class="header__container">
-        <nav class="header__nav">
-          <a href="./">
-            <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
-          </a>
-          <ul class="header__menu">
-            <li>
-              <a class="link" href="#traditions-section">Наші традиції</a>
-            </li>
-            <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
-            <li><a class="link" href="#formats-section">Формати</a></li>
-            <li><a class="link" href="#contact-section">Контакти</a></li>
-          </ul>
-        </nav>
-        <button class="header__button button modal-btn-open" type="button">
-          Замовити дзвінок
-        </button>
-        <button class="header__burger menu-btn-open" type="button">
-          <svg width="24px" height="24px">
-            <use href="./images/icons.svg#icon-menu"></use>
-          </svg>
-        </button>
-        <div class="mobile-menu">
-          <button class="mobile-menu__btn-close menu-btn-close" type="button">
-            <svg width="32" height="32">
-              <use href="./images/icons.svg#icon-close"></use>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <nav class="header__nav">
+            <a href="./">
+              <img src="./images/logo.svg" alt="Логотип сучасної пекарні" />
+            </a>
+            <ul class="header__menu">
+              <li>
+                <a class="link" href="#traditions-section">Наші традиції</a>
+              </li>
+              <li><a class="link" href="#chefs-section">Шеф-кухарі</a></li>
+              <li><a class="link" href="#formats-section">Формати</a></li>
+              <li><a class="link" href="#contact-section">Контакти</a></li>
+            </ul>
+          </nav>
+          <button class="header__button button modal-btn-open" type="button">
+            Замовити дзвінок
+          </button>
+          <button class="header__burger menu-btn-open" type="button">
+            <svg width="24px" height="24px">
+              <use href="./images/icons.svg#icon-menu"></use>
             </svg>
           </button>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <section class="hero-section">
-      <div class="container">
-        <h1 class="hero-section__title">
-          <span class="accent">Сучасна</span> перкарня
-        </h1>
-        <button class="hero-section__button button modal-btn-open" type="button">
-          Замовити дзвінок
-        </button>
-      </div>
-    </section>
-    <section class="adventages-section">
-      <div class="container">
-        <h2 class="visually-hidden">Наші переваги</h2>
-        <ul class="adventages-section__list">
-          <li class="adventages-section__item">Великий попит на ринку</li>
-          <li class="adventages-section__item">Доступні за бюджетом формати</li>
-          <li class="adventages-section__item">Досвідчена управлінська команда</li>
-        </ul>
-      </div>
-    </section>
-    <section class="traditions-section" id="traditions-section">
-      <div class="container">
-        <div class="tradition-container">
-          <div class="tradition-content">
-            <h2 class="traditions-title section-title">
-              Новий формат традицій
-            </h2>
-            <p class="tradition-text">
-              <span class="brend uppercase">SHOP BAKERY</span> — це пекарня,
-              яка взяла все найкраще, і зберегла смак традиційної випічки та
-              натуральність інгредієнтів.
-            </p>
-            <p class="tradition-text limited">
-              Ми працюємо як найвідоміші мережі —
-              <span class="brend">5 хвилин і замовлення готове</span>. А ще у
-              наших пекарень стильний дизайн та висока якість обслуговування!
-            </p>
+          <div class="mobile-menu">
+            <button class="mobile-menu__btn-close menu-btn-close" type="button">
+              <svg width="32" height="32">
+                <use href="./images/icons.svg#icon-close"></use>
+              </svg>
+            </button>
           </div>
-          <img class="traditions-img" src="./images/baker-man.jpg"
-            alt="Чоловік пекар дивиться на батони із посмішкою" />
         </div>
       </div>
-    </section>
-    <section class="chefs-section section" id="chefs-section">
-      <div class="container">
-        <h2 class="chefs-title section-title centered">
-          Наші найкращі <br /><span class="accent">шеф-кухарі</span>
-        </h2>
-        <ul class="chefs-list">
-          <li class="chefs-item">
-            <article class="chef-card">
-              <img class="chef-photo" src="./images/nastya-chef.jpg" alt="Шеф-кухар Настя" />
-              <div>
-                <h3 class="chef-title">Настя</h3>
-                <div class="chef-text">
-                  <p>Привіт, я Настя!</p>
-                  <p>
-                    Вже 10 років, я втілюю <br />у життя цікаві та смачні
-                    ідеї.
-                  </p>
-                  <p>Я випечу для вас <br />найсмачніщі вироби!</p>
-                </div>
-              </div>
-            </article>
-          </li>
-          <li class="chefs-item">
-            <article class="chef-card">
-              <img class="chef-photo" src="./images/vlad-chef.jpg" alt="Шеф-кухар Влад" />
-              <div>
-                <h3 class="chef-title">Влад</h3>
-                <div class="chef-text">
-                  <p>Привіт, я Влад!</p>
-                  <p>
-                    Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
-                    любов, з якою ми ділимось кожен раз з Вами через нашу
-                    випічку!
-                  </p>
-                  <p class="chef-text">
-                    Я зроблю для вас унікальну начинку на будь який смак!
-                  </p>
-                </div>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- <section class="formats-section section" id="formats-section">
-      <div class="container">
-        <h2 class="section-title centered">Формати</h2>
-        <div class="formats-container">
-          <button class="carousel-button" type="button">
-            <svg class="carousel-arrow" width="16px" height="16px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
+    </header>
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="hero-section__title">
+            <span class="accent">Сучасна</span> перкарня
+          </h1>
+          <button
+            class="hero-section__button button modal-btn-open"
+            type="button"
+          >
+            Замовити дзвінок
           </button>
-          <ul class="formats-list">
-            <li>
-              <article class="format-card">
-                <img class="format-image" src="./images/walrus-format.jpg" alt="Walrus format" />
-                <div class="format-background"></div>
-                <h3 class="format-title" lang="en">Walrus</h3>
-                <div class="format-text">
-                  <p>Площа: до 120 м2</p>
-                  <p>Меню: розширене меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: є</p>
+        </div>
+      </section>
+      <section class="adventages-section">
+        <div class="container">
+          <h2 class="visually-hidden">Наші переваги</h2>
+          <ul class="adventages-section__list">
+            <li class="adventages-section__item">Великий попит на ринку</li>
+            <li class="adventages-section__item">
+              Доступні за бюджетом формати
+            </li>
+            <li class="adventages-section__item">
+              Досвідчена управлінська команда
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="traditions-section" id="traditions-section">
+        <div class="container">
+          <div class="tradition-container">
+            <div class="tradition-content">
+              <h2 class="traditions-title section-title">
+                Новий формат традицій
+              </h2>
+              <p class="tradition-text">
+                <span class="brend uppercase">SHOP BAKERY</span> — це пекарня,
+                яка взяла все найкраще, і зберегла смак традиційної випічки та
+                натуральність інгредієнтів.
+              </p>
+              <p class="tradition-text limited">
+                Ми працюємо як найвідоміші мережі —
+                <span class="brend">5 хвилин і замовлення готове</span>. А ще у
+                наших пекарень стильний дизайн та висока якість обслуговування!
+              </p>
+            </div>
+            <img
+              class="traditions-img"
+              src="./images/baker-man.jpg"
+              alt="Чоловік пекар дивиться на батони із посмішкою"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="chefs-section section" id="chefs-section">
+        <div class="container">
+          <h2 class="chefs-title section-title centered">
+            Наші найкращі <br /><span class="accent">шеф-кухарі</span>
+          </h2>
+          <ul class="chefs-list">
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="chef-photo"
+                  src="./images/nastya-chef.jpg"
+                  alt="Шеф-кухар Настя"
+                />
+                <div>
+                  <h3 class="chef-title">Настя</h3>
+                  <div class="chef-text">
+                    <p>Привіт, я Настя!</p>
+                    <p>
+                      Вже 10 років, я втілюю <br />у життя цікаві та смачні
+                      ідеї.
+                    </p>
+                    <p>Я випечу для вас <br />найсмачніщі вироби!</p>
+                  </div>
                 </div>
               </article>
             </li>
-            <li>
-              <article class="format-card">
-                <img class="format-image" src="./images/horseshoe-format.jpg" alt="Horseshoe format" />
-                <div class="format-background"></div>
-                <h3 class="format-title" lang="en">Horseshoe</h3>
-                <div class="format-text">
-                  <p>Площа: до 120 м2</p>
-                  <p>Меню: розширене меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: є</p>
-                </div>
-              </article>
-            </li>
-            <li>
-              <article class="format-card">
-                <img class="format-image" src="./images/handlebar-format.jpg" alt="Handlebar format" />
-                <div class="format-background"></div>
-                <h3 class="format-title" lang="en">Handlebar</h3>
-                <div class="format-text">
-                  <p>Площа: до 120 м2</p>
-                  <p>Меню: розширене меню</p>
-                  <p>
-                    Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
-                    офіціанти-різнороби
-                  </p>
-                  <p>Посадкові місця: є</p>
+            <li class="chefs-item">
+              <article class="chef-card">
+                <img
+                  class="chef-photo"
+                  src="./images/vlad-chef.jpg"
+                  alt="Шеф-кухар Влад"
+                />
+                <div>
+                  <h3 class="chef-title">Влад</h3>
+                  <div class="chef-text">
+                    <p>Привіт, я Влад!</p>
+                    <p>
+                      Мій кодитерський стаж вже 18 років. SHOP BEKERY - це наша
+                      любов, з якою ми ділимось кожен раз з Вами через нашу
+                      випічку!
+                    </p>
+                    <p class="chef-text">
+                      Я зроблю для вас унікальну начинку на будь який смак!
+                    </p>
+                  </div>
                 </div>
               </article>
             </li>
           </ul>
-          <button class="carousel-button next" type="button">
-            <svg class="carousel-arrow" width="16px" height="16px">
-              <use href="./images/icons.svg#icon-arrow"></use>
-            </svg>
-          </button>
         </div>
-      </div>
-    </section> -->
-    <!-- <section class="contact-section section" id="contact-section">
+      </section>
+      <section class="formats-section section" id="formats-section">
+        <div class="container">
+          <h2 class="section-title centered">Формати</h2>
+          <div class="formats-section__slider">
+            <button
+              class="formats-section__button carousel-button prev"
+              type="button"
+            >
+              <svg class="carousel-arrow" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+            <div class="swiper-container formats-section__container">
+              <ul class="formats-section__list swiper-wrapper">
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      src="./images/walrus-format.jpg"
+                      alt="Walrus format"
+                    />
+                    <h3 class="format-card__title" lang="en">Walrus</h3>
+                    <div class="format-card__text">
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      src="./images/horseshoe-format.jpg"
+                      alt="Horseshoe format"
+                    />
+                    <h3 class="format-card__title" lang="en">Horseshoe</h3>
+                    <div class="format-card__text">
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      src="./images/handlebar-format.jpg"
+                      alt="Handlebar format"
+                    />
+                    <h3 class="format-card__title" lang="en">Handlebar</h3>
+                    <div class="format-card__text">
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      src="./images/walrus-format.jpg"
+                      alt="Walrus format"
+                    />
+                    <div class="format-card__background"></div>
+                    <h3 class="format-card__title" lang="en">Walrus</h3>
+                    <div class="format-card__text">
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      src="./images/horseshoe-format.jpg"
+                      alt="Horseshoe format"
+                    />
+                    <div class="format-card__background"></div>
+                    <h3 class="format-card__title" lang="en">Horseshoe</h3>
+                    <div class="format-card__text">
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
+                    </div>
+                  </article>
+                </li>
+                <li class="swiper-slide">
+                  <article class="format-card">
+                    <img
+                      class="format-card__image"
+                      src="./images/handlebar-format.jpg"
+                      alt="Handlebar format"
+                    />
+                    <div class="format-card__background"></div>
+                    <h3 class="format-card__title" lang="en">Handlebar</h3>
+                    <div class="format-card__text">
+                      <p>Площа: до 120 м2</p>
+                      <p>Меню: розширене меню</p>
+                      <p>
+                        Штат: 2 продавці-касири, 2 пекарі, 2 помічники пекаря, 2
+                        офіціанти-різнороби
+                      </p>
+                      <p>Посадкові місця: є</p>
+                    </div>
+                  </article>
+                </li>
+              </ul>
+              <div class="pagination"></div>
+            </div>
+            <button
+              class="formats-section__button carousel-button next"
+              type="button"
+            >
+              <svg class="carousel-arrow" width="16px" height="16px">
+                <use href="./images/icons.svg#icon-arrow"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- <section class="contact-section section" id="contact-section">
       <div class="container">
         <div class="contact-container">
           <div class="contact-form">
@@ -237,8 +362,8 @@
         </div>
       </div>
     </section> -->
-  </main>
-  <!-- <footer class="footer-section">
+    </main>
+    <!-- <footer class="footer-section">
     <div class="container">
       <div class="footer-container">
         <nav class="footer-nav">
@@ -293,7 +418,7 @@
       </div>
     </div>
   </footer> -->
-  <!-- <div class="backdrop is-hidden">
+    <!-- <div class="backdrop is-hidden">
     <div class="modal">
       <button class="modal-btn-close modal-btn" type="button">
         <svg width="32" height="32">
@@ -324,9 +449,8 @@
       </p>
     </div>
   </div> -->
-</body>
+  </body>
 
-<script src="./js/modal.js"></script>
-<script src="./js/mobile-menu.js"></script>
-
+  <script src="./js/modal.js"></script>
+  <script src="./js/mobile-menu.js"></script>
 </html>
