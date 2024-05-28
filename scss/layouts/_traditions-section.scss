@@ -23,6 +23,15 @@
   margin-bottom: 42px;
 }
 
+.tradition-text {  
+  font-size: 14px;
+  
+  @media screen and (min-width: $bp-tablet) {
+      font-weight: 600;
+      font-size: 18px;
+  }
+}
+
 .tradition-text .brend {
   color: var(--color-brend-normal);
   font-weight: 600;

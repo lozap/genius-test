@@ -21,16 +21,18 @@
   &__map {
     flex-shrink: 0;
     height: 176px;
-    margin: 0 -24px;
+    margin: 0 -24px;    
     border-radius: 16px;
     border: none;
 
     @media screen and (min-width: $bp-tablet) {
+      margin: 16px;
       width: 320px;
       height: 595px;
     }
 
     @media screen and (min-width: $bp-desktop) {
+      margin: 16px;
       width: 600px;
       height: 595px;
     }
