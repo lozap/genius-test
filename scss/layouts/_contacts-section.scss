@@ -1,20 +1,38 @@
 /* Contact section */
 
 .contact-section {
-    padding-bottom: 96px;
-}
+  padding-bottom: 96px;
 
-.contact-title {
+  &__title {
     margin-bottom: 16px;
-}
+  }
 
-.contact-container {
+  &__container {
     display: flex;
     gap: 32px;
-}
+    flex-direction: column;
 
-.contact-map {
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 24px;
+    }
+  }
+
+  &__map {
     flex-shrink: 0;
-    border: 0;
+    height: 176px;
+    margin: 0 -24px;
     border-radius: 16px;
+    border: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      width: 320px;
+      height: 595px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      width: 600px;
+      height: 595px;
+    }
+  }
 }
