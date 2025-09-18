@@ -1,6 +1,6 @@
 /* Footer section */
 
-.footer {  
+.footer {
   padding: 32px 0;
   position: relative;
   display: flex;
@@ -22,34 +22,34 @@
 
   &::before,
   &::after {
-    position: absolute;    
+    position: absolute;
     background-repeat: no-repeat;
-    content: "";
+    content: '';
   }
 
   &::before {
-    bottom: 200px;    
+    bottom: 200px;
     width: 100px;
     height: 200px;
     background-image: url(../images/mobil-decor-bread-before.png);
-    
+
     @media screen and (min-width: $bp-tablet) {
       bottom: 0;
       width: 180px;
       height: 120px;
       background-image: url(../images/decor-bread-small.png);
-    }                
+    }
   }
 
-  &::after {    
+  &::after {
     bottom: 0;
-    right: 0;    
+    right: 0;
     width: 112px;
     height: 120px;
     background-image: url(../images/mobil-decor-bread-after.png);
-    background-size: cover;    
+    background-size: cover;
 
-    @media screen and (min-width: $bp-tablet) {      
+    @media screen and (min-width: $bp-tablet) {
       width: 380px;
       height: 190px;
       background-image: url(../images/decor-bread-large.png);
@@ -57,21 +57,20 @@
   }
 
   &__nav,
-  &__address
-  {
+  &__address {
     display: flex;
     flex-basis: 50%;
     gap: 20px;
     flex-direction: column;
     text-align: center;
 
-    @media screen and (min-width: $bp-tablet) {      
+    @media screen and (min-width: $bp-tablet) {
       flex-direction: row;
       flex-basis: 50%;
       text-align: left;
     }
-  } 
-  
+  }
+
   &__logo,
   &__menu,
   &__list,

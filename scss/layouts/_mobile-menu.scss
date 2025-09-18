@@ -26,4 +26,10 @@
     border: none;
     cursor: pointer;
   }
+
+  &__img {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+  }
 }

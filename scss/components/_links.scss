@@ -1,12 +1,11 @@
-
 /* Link */
 
 .link {
-    color: var(--color-primary-light);
-    text-decoration: none;
-    transition: color 0.3s;
-}
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.3s;
 
-.link:hover {
+  &:hover {
     color: var(--color-brend-normal);
+  }
 }
