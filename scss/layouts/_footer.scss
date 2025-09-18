@@ -79,6 +79,11 @@
     z-index: 2;
   }
 
+  &__logo{
+    // fill: var(--color-primary-dark);
+    stroke: var(--color-primary-light);
+  }
+
   &__address-link {
     color: var(--color-primary-light);
     font-size: 16px;
